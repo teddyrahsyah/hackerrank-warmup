@@ -7,21 +7,21 @@
 
 def plusMinus(arr):
     # Write your code here
-    positive_elements = []
-    negative_elements = []
-    zero_elements = []
+    positive_elements = 0
+    negative_elements = 0
+    zero_elements = 0
 
     for i in arr:
       if i > 0:
-        positive_elements.append(i)
+        positive_elements += 1
       elif i < 0:
-        negative_elements.append(i)
+        negative_elements += 1
       else:
-        zero_elements.append(i)
+        zero_elements += 1
 
-    print("{:.6f}".format(len(positive_elements) / len(arr)))
-    print("{:.6f}".format(len(negative_elements) / len(arr)))
-    print("{:.6f}".format(len(zero_elements) / len(arr)))
+    print("{:.6f}".format(positive_elements / len(arr)))
+    print("{:.6f}".format(negative_elements / len(arr)))
+    print("{:.6f}".format(zero_elements / len(arr)))
 
 
 if __name__ == '__main__':
