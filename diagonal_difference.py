@@ -8,19 +8,19 @@
 
 def diagonalDifference(arr, n):
     # Write your code here
-    ascDiagonal = 0
-    descDiagonal = 0
+    asc_diagonal = 0
+    desc_diagonal = 0
 
     # Diagonal Ascending
     for i in range(n):
-      ascDiagonal += arr[i][i]
+      asc_diagonal += arr[i][i]
 
     # Diagonal Ascending
     x = 0
     for i in range(n-1, -1, -1):
-      descDiagonal += arr[x][i]
+      desc_diagonal += arr[x][i]
       x += 1
-    return abs(ascDiagonal - descDiagonal)
+    return abs(asc_diagonal - desc_diagonal)
 
 
 if __name__ == '__main__':

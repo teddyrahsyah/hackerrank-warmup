@@ -8,8 +8,8 @@
 
 def birthdayCakeCandles(candles):
     # Write your code here
-    maxHeight = max(candles)
-    print(candles.count(maxHeight))
+    max_height = max(candles)
+    print(candles.count(max_height))
 
 if __name__ == '__main__':
 
